@@ -1,0 +1,242 @@
+body {
+    background-color: rgba(24, 21, 60, 1);
+    background-image: url("./images/background-grid.png");
+    /*text-align: center;*/
+    font-family: 'Play', sans-serif;
+    color: white;
+    width: 100%;
+    margin: auto;
+}
+
+header, .about, .prjcts, .contacts {
+    background-color: rgba(17, 14, 48, 0.95);
+    box-shadow: 1px 1px 10px rgba(244, 82, 198, 0.46);
+    margin: 2% 1%;
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.97);
+}
+
+a:hover {
+    color: white;
+    text-shadow: 1px 1px 2px  rgba(243, 134, 212, 0.8);
+}
+
+a:active {
+    color: rgb(61, 255, 2);
+    text-shadow: none;
+}
+
+.header-name {
+    font-family: 'Teko', sans-serif;
+    letter-spacing: 0.2rem;
+    display: inline-flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+#logo-container img {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: -0.5rem;
+    width: 3.7rem;
+}
+
+ul {
+    list-style: none;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav a {
+    margin: auto 2rem;
+    font-size: 2rem;
+}
+
+
+.about {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about .img-container {
+    display: flex;
+    align-items: flex-end;
+}
+
+#personal-pic {
+    height: 28rem;
+    width: auto;
+}
+
+h1, h2 {
+    letter-spacing: 0.3rem;
+}
+
+h4 {
+    font-size: 2rem;
+    margin-bottom: 10%;
+}
+
+.introduction {
+    padding-left: 3%;
+    padding-top: 2%;
+    word-spacing: 0.8rem;
+}
+
+.introduction h6 {
+    font-size: 1rem;
+    margin-left: 8%;
+    margin-bottom: 0;
+    word-spacing: 0.5rem;
+    letter-spacing: 0.2rem;
+}
+
+
+.skills img {
+    width: 3.5rem;
+}
+
+.skills {
+    margin-left: 5%;
+}
+
+.skills li {
+    display: inline-flex;
+    padding: 0 3rem;
+}
+
+.skill-place {
+    width: 3.5rem;
+    opacity: 0.4;
+}
+
+#js-skill-place {
+    position: absolute;
+    top: 14rem;
+    right: 3.5rem;
+}
+
+#css-skill-place {
+    position: absolute;
+    top: 12rem;
+    right: 12rem;
+}
+
+#wp-skill-place {
+    position: absolute;
+    top: 19rem;
+    right: 19rem;
+}
+
+#html-skill-place {
+    position: absolute;
+    top: 28rem;
+    right: 19rem;
+}
+
+.prjcts h3 {
+    text-align: center;
+    padding-top: 3%;
+    margin-bottom: -1%;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 39rem;
+}
+
+.project-container {
+    background-color: rgba(17, 14, 48, 1);
+    box-shadow:0px 0px 12px 0px #73f7f5b6 ,0px 0px 20px 0px #ff0088ab;
+    -webkit-box-shadow:0px 0px 12px 0px #73f7f5b6 ,0px 0px 20px 0px #ff0088ab;
+    -moz-box-shadow:0px 0px 12px 0px #73f7f5b6 ,0px 0px 20px 0px #ff0088ab;
+    border-radius: 10px;
+    height: 80%;
+    width: 27%;
+}
+
+.project-container .img-container {
+    width: 90%;
+    height: 80%;
+    margin: 1.5rem auto 0.5rem;
+    box-shadow: 0px 0px 9px 0px rgba(255, 255, 255, 0.89);
+    overflow-y: scroll;
+}
+
+.img-container img {
+    width: 100%;
+}
+
+.project-link {
+    text-align: center;
+}
+
+.project-link a {
+    font-size: 1.1rem;
+}
+
+.project-link img {
+    width: 1rem;
+    height: auto;
+}
+
+.contacts {
+    text-align: center;
+    width: 45%;
+    margin: auto;
+}
+
+.contacts p {
+    padding-top: 0.5rem;
+}
+
+.contact-links {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.contact-links .img-container {
+    width: 3rem;
+    height: auto;
+    margin: 0 3rem 2rem;
+}
+
+.contact-links img {
+    width: 100%;
+    opacity: 0.8;
+}
+
+.contact-links img:hover {
+    opacity: 1;
+}
+
+.contact-links img:active {
+    width: 90%;
+}
+
+
+footer {
+    background-color: rgba(17, 14, 48, 0.98);
+    margin-top: 2%;
+    width: 100%;
+    text-align: center;
+}
+
+
