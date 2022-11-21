@@ -1,14 +1,13 @@
 body {
     background-color: rgba(24, 21, 60, 1);
     background-image: url("./images/background-grid.png");
-    /*text-align: center;*/
     font-family: 'Play', sans-serif;
     color: white;
     width: 100%;
     margin: auto;
 }
 
-header, .about, .prjcts, .contacts {
+header, .about, .prjcts, .contacts, .aside-info {
     background-color: rgba(17, 14, 48, 0.95);
     box-shadow: 1px 1px 10px rgba(244, 82, 198, 0.46);
     margin: 2% 1%;
@@ -88,7 +87,6 @@ h1, h2 {
 
 h4 {
     font-size: 2rem;
-    margin-bottom: 10%;
 }
 
 .introduction {
@@ -110,6 +108,8 @@ h4 {
     width: 3.5rem;
 }
 
+
+
 .skills {
     margin-left: 5%;
 }
@@ -124,25 +124,25 @@ h4 {
     opacity: 0.4;
 }
 
-#js-skill-place {
+#js-target {
     position: absolute;
     top: 14rem;
     right: 3.5rem;
 }
 
-#css-skill-place {
+#css-target {
     position: absolute;
     top: 12rem;
     right: 12rem;
 }
 
-#wp-skill-place {
+#wp-target {
     position: absolute;
     top: 19rem;
     right: 19rem;
 }
 
-#html-skill-place {
+#html-target {
     position: absolute;
     top: 28rem;
     right: 19rem;
@@ -240,3 +240,125 @@ footer {
 }
 
 
+.swal-overlay {
+    background-color: rgba(24, 21, 60, 0.5);
+}
+
+.swal-modal {
+    background-color: rgba(24, 21, 60, 0.9);
+    border: 3px solid white;
+  }
+
+.swal-text, .swal-title {
+    color: white;
+  }
+
+.swal-button {
+    padding: 7px 19px;
+    border-radius: 2px;
+    background-color: #ff00aabd;
+    font-size: 12px;
+    border: 1px solid #0a0947;
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
+  }
+
+
+#know-more {
+    display: none;
+    margin: 1.5rem auto;
+    width: 12rem;
+    height: 3rem;
+    font-size: 1rem;
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#know-more:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+#know-more:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+#random-fact {
+    font-size: 1.1rem;
+    margin: 0.5rem;
+    text-align: center;
+    word-spacing: 0.3rem;
+    font-family: 'Metrophobic', sans-serif;
+}
+
+
+#random-fact-container {
+    display: none;
+    height: auto;
+    width: 65%;
+    border: 1px solid white;
+    background-color: rgba(24, 21, 60, 0.8);
+    margin-bottom: -3.5rem;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#game {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
