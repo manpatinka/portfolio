@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="./resources/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Metrophobic&display=swap" rel="stylesheet">
+    <script src="main.js" defer></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <body>
     <header>
@@ -37,37 +40,46 @@
                 <h1>Hello, world!</h1>
                 <h2>My name is Evgenia Yurkova.</h2>
                 <h4>I'm a self-taught web-developer from Vilnius, Lithuania.</h4>
-                <h6 id="game">You can help me collect these skills! Just grab it and move.</h6>
+                <h6 id="game">You can help me collect these skills! Just doubleclick on each of them.</h6> 
+                <button id="know-more" role="button">Get random fact</button>
+                <div id="random-fact-container">
+                    <p id="random-fact"> </p>
+                </div>
                 <ul class="skills">
                     <li>
-                        <img src="./resources/images/js-skill.png" alt="JavaScript" title="Java Script">
+                        <img src="./resources/images/js-skill.png" id="js-source" alt="JavaScript" title="Java Script">
+                        
                     </li>
                     <li>
-                        <img src="./resources/images/css-skill.png" alt="CSS" title="CSS">
+                        <img src="./resources/images/css-skill.png" id="css-source" alt="CSS" title="CSS">
+                        
                     </li>
                     <li>
-                        <img src="./resources/images/html-skill.png" alt="HTML" title="HTML">
+                        <img src="./resources/images/html-skill.png" id="html-source" alt="HTML" title="HTML">
+                        
                     </li>
                     <li>
-                        <img src="./resources/images/wp-skill.png" alt="Wordpress" title="WordPress">
+                        <img src="./resources/images/wp-skill.png" id="wp-source" alt="Wordpress" title="WordPress">
                     </li>
                 </ul>
+               
             </div>
             <div class="img-container">   
                     <img src="./resources/images/profile-pic.png" alt="personal picture" id="personal-pic">
-            </div>    
+            </div>  
+              
         </div>
-        <div id="js-skill-place">
-            <img src="./resources/images/js-place.png" alt=" " class="skill-place">
+        <div>
+            <img src="./resources/images/js-place.png" alt=" " class="skill-place" id="js-target">
         </div>
-        <div id="html-skill-place">
-            <img src="./resources/images/html-place.png" alt=" " class="skill-place">
+        <div>
+            <img src="./resources/images/html-place.png" alt=" " class="skill-place" id="html-target">
         </div>
-        <div id="css-skill-place">
-            <img src="./resources/images/css-place.png" alt=" " class="skill-place">
+        <div>
+            <img src="./resources/images/css-place.png" alt=" " class="skill-place" id="css-target">
         </div>
-        <div id="wp-skill-place">
-            <img src="./resources/images/wp-place.png" alt=" " class="skill-place">
+        <div>
+            <img src="./resources/images/wp-place.png" alt=" " class="skill-place" id="wp-target">
         </div>
         <div class="prjcts">
             <h3>My projects:</h3>
