@@ -549,7 +549,7 @@ footer {
         text-align: center;
     }
     
-    @media only screen and (max-width: 500px) {
+    @media only screen and (max-width: 500px), (orientation: portrait) {
         .prjcts {
             height: 120rem;
           }
@@ -561,9 +561,7 @@ footer {
         .contacts {
             width: 100%;
         }
-      }
 
-    @media only screen and (max-width: 400px) {
         h2 {
             font-size: 1.7rem;
         }
@@ -571,5 +569,6 @@ footer {
         #profile-pic {
             height: 26rem;
         }
-    }
+      }
+
 }
