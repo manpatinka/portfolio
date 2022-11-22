@@ -95,12 +95,16 @@ h4 {
     word-spacing: 0.8rem;
 }
 
-.introduction h6 {
+#game {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
     font-size: 1rem;
-    margin-left: 8%;
+    margin-left: 5%;
     margin-bottom: 0;
     word-spacing: 0.5rem;
     letter-spacing: 0.2rem;
+    text-align: right;
 }
 
 
@@ -148,6 +152,10 @@ h4 {
     right: 19rem;
 }
 
+.prjcts {
+    height: auto;
+  }
+
 .prjcts h3 {
     text-align: center;
     padding-top: 3%;
@@ -156,6 +164,7 @@ h4 {
 
 .projects {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     height: 39rem;
@@ -356,9 +365,211 @@ footer {
     margin-right: auto;
 }
 
+@media only screen and (max-width: 1280px) {
+    #game {
+        margin-top: 4%;
+        margin-left: auto;
+    }
+}
 
-#game {
-    display: flex;
-    justify-content: center;
-    margin-top: 10%;
+@media only screen and (min-width: 1450px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    html {
+        font-size: 14px;
+    }
+
+    #personal-pic {
+        height: 26rem;
+    }
+}
+
+@media only screen and (max-width: 1060px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .prjcts {
+        height: 80rem;
+      }
+
+      .prjcts h3 {
+        margin-bottom: 5%;
+    }
+
+    .project-container {
+        width: 40%;
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .project-link a {
+        font-size: 1.7rem;
+        padding-bottom: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #game {
+        font-size: 0.8rem;
+    }
+
+    #wp-target {
+        right: 17rem;
+    }
+
+    #html-target {
+        right: 18rem;
+    }
+
+    .contacts {
+        width: 70%;
+    }
+
+    .contact-links .img-container {
+        width: 4rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+}
+
+@media only screen and (max-width: 890px) {
+    #personal-pic {
+        height: 25rem;
+    }
+
+    .skills img {
+        width: 3rem;
+    }
+
+    .skill-place {
+        width: 3rem;
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    .introduction h4 {
+        font-size: 1.7rem;
+        margin-bottom: 5rem;
+    }
+
+    h2 {
+        font-size: 2.4rem;
+    }
+    
+    .skills {
+        margin-left: 0;
+    }
+
+    #html-target {
+        top: 26rem;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    #html-target {
+        right: 16rem;
+    }
+}
+
+@media only screen and (max-width: 840px) {
+    .introduction h4 {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 795px) {
+    html {
+        font-size: 11px;
+    }
+}
+
+@media only screen and (max-width: 732px) {
+    #personal-pic {
+        height: 24rem;
+    }
+
+    .skills li {
+        padding-left: 0;
+        padding-right: 4rem;
+    }
+
+    #game {
+        padding-right: 3rem;
+    }
+}
+
+@media only screen and (max-width: 709px) {
+    .introduction h4 {
+        margin-bottom: 1rem;
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    .skills li {
+        padding-left: 0;
+        padding-right: 1rem;
+    }
+
+    #game {
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    #game {
+        display: none;
+    }
+
+    .skills {
+        display: none;
+    }
+
+    .skill-place {
+        display: none;
+    }
+
+    header {
+        display: none;
+    }
+
+    h1 {
+        font-size: 2.7rem;
+    }
+
+    .introduction {
+        text-align: center;
+    }
+    
+    @media only screen and (max-width: 500px) {
+        .prjcts {
+            height: 120rem;
+          }
+    
+         .project-container {
+            width: 60%;
+            margin: 2rem;
+        }
+        .contacts {
+            width: 100%;
+        }
+      }
+
+    @media only screen and (max-width: 400px) {
+        h2 {
+            font-size: 1.7rem;
+        }
+
+        #profile-pic {
+            height: 26rem;
+        }
+    }
 }
