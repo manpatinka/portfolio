@@ -185,7 +185,7 @@ h4 {
     height: 80%;
     margin: 1.5rem auto 0.5rem;
     box-shadow: 0px 0px 9px 0px rgba(255, 255, 255, 0.89);
-    overflow-y: scroll;
+    overflow: scroll;
 }
 
 .img-container img {
